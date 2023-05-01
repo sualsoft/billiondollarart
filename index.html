@@ -78,7 +78,10 @@
 
             gridContainer.style.width = gridSize * pixelSize + "px";
             gridContainer.style.height = gridSize * pixelSize + "px";
-            gridContainer.style.border = "1px solid #000";
+            gridContainer.style.borderTop = "none";
+            gridContainer.style.borderLeft = "none";
+            gridContainer.style.borderRight = "1px solid #000";
+            gridContainer.style.borderBottom = "1px solid #000";
             gridContainer.style.display = "grid";
             gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, ${pixelSize}px)`;
             gridContainer.style.gridTemplateRows = `repeat(${gridSize}, ${pixelSize}px)`;
@@ -106,7 +109,6 @@
           &copy; Copyright <strong><span>Billions</span></strong
           >. All Rights Reserved
         </div>
-        <div class="credits">Designed by <a href="/">Billion</a></div>
       </div>
     </footer>
     <!-- End Footer -->
